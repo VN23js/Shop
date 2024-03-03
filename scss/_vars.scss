@@ -1,0 +1,184 @@
+@media (min-width: 828px){
+    .menu__icon.icon-menu{ 
+        display: none;
+
+    }
+    
+    }
+    
+    @media (min-width: 721px){
+     
+    .body-header-next.container{
+        display: none;
+        visibility:hidden ;
+        overflow: hidden;
+        content-visibility: hidden;
+    }
+
+    }
+
+
+.nav-link:hover{
+    text-decoration: underline;
+color: white;
+}
+
+.top-header__user._icon-user:hover{
+    text-decoration: none;
+    color: white;
+}
+.material-symbols-outlined:hover{
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 999.98px) {
+
+
+    .actions-header__location{
+        display: none;
+        visibility:hidden ;
+        overflow: hidden;
+        content-visibility: hidden;
+    }
+    .cart-header__body {
+        display: none;
+        visibility:hidden ;
+        overflow: hidden;
+        content-visibility: hidden;
+    }
+
+    div.actions-header {
+        margin: 0px 1px;
+    }
+
+
+    div.cart-header__body{
+        display: none;
+        visibility:hidden ;
+        overflow: hidden;
+        content-visibility: hidden;
+     }
+     a.actions-header__location{
+        display: none;
+        visibility:hidden ;
+        overflow: hidden;
+        content-visibility: hidden;
+     }
+
+ }
+
+
+ @media (min-width: 708px) and (max-width: 820.98px) {
+ .sub-menu-catalog__category{
+    padding-right: 21px;
+ }
+
+
+
+}
+
+@media (min-width: 208px) and (max-width: 720.98px) {
+    a.nav-link.id-1{
+    display: none;
+        visibility:hidden ;
+        overflow: hidden;
+        content-visibility: hidden;
+
+ }
+
+ .header__catalog.catalog-header{
+    display: none;
+    visibility:hidden ;
+    overflow: hidden;
+    content-visibility: hidden;
+ } 
+
+
+.body-header__actions.actions-header{
+    display: none;
+    visibility:hidden ;
+    overflow: hidden;
+    content-visibility: hidden;
+}
+.search-header{
+    display: none;
+    visibility:hidden ;
+    overflow: hidden;
+    content-visibility: hidden;
+}
+
+
+
+.top-header__user._icon-user{
+    display: none;
+    visibility:hidden ;
+    overflow: hidden;
+    content-visibility: hidden;
+ }
+
+ a.body-header__logo {
+    font-size: 42px;
+    WIDTH: MAX-CONTENT;
+    PADDING: 10PX;
+    
+  
+}
+
+div.body-header.container{
+    justify-content: center;
+}
+
+
+
+}
+.body-header__logo {
+
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 720.98px) {
+
+div.item__icon{
+    display: none;
+    visibility:hidden ;
+    overflow: hidden;
+    content-visibility: hidden;
+ }
+
+
+}
+
+
+@media (min-width: 720.98px)   and (max-width: 780.98px){
+a.phones-header__phone {
+    color: #141414;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    font-size: 16px;
+   width: max-content;
+    height: inherit;
+    height: fit-content;
+    margin-left: 10px;
+}
+.phones-header__callback{
+    margin-left: 10px;
+}
+}
+
+.menu-catalog .sub-menu-catalog__sub {
+  
+    z-index: 2;
+}
+
+@media (min-width: 900px){
+.row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: 25%;
+}
+}
