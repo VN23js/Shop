@@ -485,13 +485,16 @@ class MenuCard2 {
     }
 
     element.innerHTML = `
-        <div class="row">
-        <div class="card">
-        <h4>${this.name}</h4>
-        <p>${this.text}</p>
-        <p>${this.date}</p>
-        </div>
-    </div>
+
+    <div class="comment mt-4 text-justify float-left">
+    <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+    <h4>${this.name}</h4>
+    <p>${this.date}</p>
+    <br>
+    <p>${this.text}</p>
+</div>
+
+
 
       
 
