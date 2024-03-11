@@ -406,6 +406,10 @@ function bindPostData(form) {
 				display: block;
 				margin: 0 auto;
 			`;
+    if (form.length > 205) {
+      // Обрезаем сообщение до 100 символов
+      form = form.substring(0, 205);
+    }
     // statusMessage.textContent = message.loading; - удалить
     // form.append(statusMessage); - удалить
     form.insertAdjacentElement("afterend", statusMessage);
@@ -415,7 +419,9 @@ function bindPostData(form) {
     //let a ='эмир'
     // request.setRequestHeader('Content-type', 'application/json; charset=utf-8'); - удалить
     const formData = new FormData(form);
+
     formData.append("date", jsonDate); // Добавить дату в FormData
+
     //  formData.append('RTY', a);
     const json = JSON.stringify(Object.fromEntries(formData.entries()));
     // const object = {}; - удалить
@@ -487,7 +493,7 @@ class MenuCard2 {
     element.innerHTML = `
 
     <div class="comment mt-4 text-justify float-left">
-    <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+    <img src="/app/images/icons8-пользователь-100.png" alt="" class="rounded-circle" width="40" height="40">
     <h4>${this.name}</h4>
     <p>${this.date}</p>
     <br>
@@ -503,6 +509,7 @@ class MenuCard2 {
   }
 }
 
+document.querySelector('input[type="text"]').maxLength = 205;
 axios.get("https://lwr1vjxm-3000.euw.devtunnels.ms/requests").then((data) => {
   data.data.forEach(({ name, text, date }) => {
     const newElement = new MenuCard2(name, text, date, " .slider").render2();
