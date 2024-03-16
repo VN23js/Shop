@@ -544,6 +544,7 @@ div.carousel.slide{
 }
 .card-img, .card-img-bottom, .card-img-top {
     width: 50px;
+    
     padding-top: 10px;
     
 }
@@ -662,14 +663,18 @@ li.special {
     width: 17rem;
 }
 .card-img-topnext{
-    top: 10px;
+   // top: 10px;
+   background-size: cover;
     position: relative;
+    object-fit: cover;
+    max-height: 335px;
 }
+
 
   
   .wrapper{
     width: 16rem;
-    
+  
 
     background: white;
     margin: 2x;
@@ -680,7 +685,11 @@ li.special {
     transform: scale(0.95);
     transition: box-shadow 0.5s, transform 0.5s;
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+
+    display: flex;
+    justify-content: flex-end;
     .container{
       width:100%;
       height:100%;
@@ -797,8 +806,8 @@ li.special {
     .inside{
       z-index:9;
       background: #92879B;
-      width:140px;
-      height:140px;
+      width:128px;
+      height:132px;
       position: absolute;
       top: -70px;
       right: -70px;
@@ -842,9 +851,7 @@ li.special {
         h1, p, table{
           color: white;
         }
-        p{
-          font-size:13px;
-        }
+        
       }
     }
   }
@@ -873,5 +880,34 @@ li.special {
     align-content: flex-start;
     align-items: flex-start;
     padding: 10px;
+    text-align: left;
 }
-  
+  .cardtext{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; /* Задаем шрифт, если он установлен на компьютере пользователя */
+    font-style:inherit;
+  font-weight: 600;
+  font-weight: bold; /* Жирный шрифт */
+  color: #333; /* Цвет текста */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+ 
+  }
+ // .text{
+   // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  //  font-size: 1rem;
+  //  font-weight: 400;
+  //  line-height: 2.0;
+   // color: #ffffff;
+   // text-align: left;
+  //}
+  p.card-textnext{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+   
+  }
+.black{
+  flex: 1 0 auto;
+}

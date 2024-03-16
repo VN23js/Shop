@@ -571,6 +571,7 @@ img.card-img-top.ty3 {
 
   div.wrapper{
     width: 14rem;
+    height: 27rem;
   }
   
 
@@ -767,11 +768,23 @@ img.card-img-top.ty3 {
 @media (max-width: 500px){
 div.wrapper {
   width: 177px;
+  height: 23rem;
+}
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  color: var(--bs-card-title-color);
+  font-size: 16px;
+}
+.wrapper.inside.contents.p {
+  font-size: 16px;
 }
 
 }
-
-
+@media (min-width: 1200px){
+  div.wrapper {
+    border: 2px solid rgba(0, 0, 0, 0.125);
+  }
+}
 
 
 @media (max-width: 380px){
