@@ -5,6 +5,6 @@
 ![image](https://github.com/VN23js/Shop/assets/90689988/88ab643e-4640-4e35-8257-bf8b63f73a30)
 
   Форма комментариев не самая лучшая фронт хромает и небольшая практика по бэку      
-      npx json-server --watch db.json
+Запуск бд      npx json-server --watch db.json
 ![image](https://github.com/VN23js/Shop/assets/90689988/44eceafc-117c-473d-a9f8-006d13a8cbc1)
 
